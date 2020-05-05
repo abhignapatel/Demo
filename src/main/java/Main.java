@@ -14,8 +14,13 @@ public class Main {
 //        int b = fr.find(a,5);
 //        System.out.println(b);
 
-        SumofArray sa = new SumofArray();
-        int a = sa.sum(new int[]{1,2,3,4,5});
-        System.out.println(a);
+//        SumofArray sa = new SumofArray();
+//        int a = sa.sum(new int[]{1,2,3,4,5});
+//        System.out.println(a);
+
+        FindMaxValue findMax = new FindMaxValue();
+        int[] a = {2,4,6,8,1};
+        int max = findMax.findMax(a);
+        System.out.println(max);
     }
 }

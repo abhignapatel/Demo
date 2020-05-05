@@ -1,9 +1,10 @@
-public class FindMax {
-    int find(int[] a){
+public class FindMaxValue {
+    public int findMax(int[] a) {
         int answer = 0;
-        for(int i=0;i<a.length;i++){
-            if(a[i]>a[i+1]){
-                answer = a[i];
+        for (int i :a) {
+            if(i>answer){
+                answer = i;
+
             }
         }
         return answer;
