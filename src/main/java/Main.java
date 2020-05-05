@@ -19,8 +19,12 @@ public class Main {
 //        System.out.println(a);
 
         FindMaxValue findMax = new FindMaxValue();
-        int[] a = {2,4,6,8,1};
+        int[] a = {-1,-2,-3};
         int max = findMax.findMax(a);
-        System.out.println(max);
+        System.out.println("max:"+max);
+        FindMin fn = new FindMin();
+         int b=fn.min(new int[]{3,4,5,1,2,6,7});
+           System.out.println("min value:"+b);
+
     }
 }
