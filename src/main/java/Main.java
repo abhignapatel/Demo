@@ -55,6 +55,12 @@ public class Main {
             System.out.println("value exists");
         }
         System.out.println(hashMap.values());*/
+//
+//        StringDuplicate stringDuplicate = new StringDuplicate();
+//        boolean str= stringDuplicate.test("engineer");
+//        System.out.println(str);
+          AltNum altNum=new AltNum();
+         altNum.print(new int[]{1,2,3,4,5,6,7,8});
 
 //        StringDuplicate stringDuplicate = new StringDuplicate();
 //        boolean str= stringDuplicate.test("engineer");
