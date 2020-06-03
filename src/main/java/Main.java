@@ -1,13 +1,24 @@
-import java.util.HashMap;
+import org.omg.PortableInterceptor.INACTIVE;
+
+import java.util.Stack;
 
 public class Main {
-    static boolean test(int[] a, int key) {
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] == key) {
-                return true;
-            }
+//    static boolean test(int[] a, int key) {
+//        for (int i = 0; i < a.length; i++) {
+//            if (a[i] == key) {
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
+
+  static   int check(Node head){
+      int count =0;
+        while (head!=null){
+            count = count+1;
+            head = head.next;
         }
-        return false;
+        return count;
     }
 
     public static void main(String[] args) {
@@ -59,8 +70,53 @@ public class Main {
 //        StringDuplicate stringDuplicate = new StringDuplicate();
 //        boolean str= stringDuplicate.test("engineer");
 //        System.out.println(str);
-          AltNum altNum=new AltNum();
-         altNum.print(new int[]{1,2,3,4,5,6,7,8});
 
+//          AltNum altNum=new AltNum();
+//         altNum.print(new int[]{1,2,3,4,5,6,7,8});
+
+//        Palindrom palindrom = new Palindrom();
+//        palindrom.print("abcba");
+
+
+//        Scanner s=new Scanner(System.in);
+//        int i = s.nextInt();
+//        Factorial factorial = new Factorial();
+//        int a= factorial.print(i);
+//        System.out.println(a);
+//        Fibonacci fibonacci = new Fibonacci();
+//        int a=fibonacci.fab(i);
+//        System.out.println(a);
+
+//        Stack stack =new Stack(3);
+//        stack.push(1);
+//        stack.push(2);
+//        stack.push(3);
+//        stack.push(4);
+//        stack.printstack();
+
+        Node head = new Node(1);
+        Node second = new Node(2);
+        Node third = new Node(3);
+
+        head.next = second;
+        second.next = third;
+//          System.out.println("null is" + check(head));
+
+        if (check(head) % 2 == 0) {
+            System.out.println("odd");
+        } else {
+            System.out.println("even");
+//         }
+            Stack<Integer> stack = new Stack<Integer>();
+            stack.push(1);
+            stack.push(2);
+            stack.push(3);
+            stack.push(4);
+            stack.push(5);
+            System.out.println("size is " + stack.size());
+
+
+        }
     }
+
 }
