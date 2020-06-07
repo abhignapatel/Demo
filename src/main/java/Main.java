@@ -1,7 +1,3 @@
-import org.omg.PortableInterceptor.INACTIVE;
-
-import java.util.Stack;
-
 public class Main {
 //    static boolean test(int[] a, int key) {
 //        for (int i = 0; i < a.length; i++) {
@@ -12,10 +8,10 @@ public class Main {
 //        return false;
 //    }
 
-  static   int check(Node head){
-      int count =0;
-        while (head!=null){
-            count = count+1;
+    static int check(Node head) {
+        int count = 0;
+        while (head != null) {
+            count = count + 1;
             head = head.next;
         }
         return count;
@@ -93,27 +89,27 @@ public class Main {
 //        stack.push(3);
 //        stack.push(4);
 //        stack.printstack();
-
-        Node head = new Node(1);
-        Node second = new Node(2);
-        Node third = new Node(3);
-
-        head.next = second;
-        second.next = third;
-//          System.out.println("null is" + check(head));
-
-        if (check(head) % 2 == 0) {
-            System.out.println("odd");
-        } else {
-            System.out.println("even");
-//         }
-            Stack<Integer> stack = new Stack<Integer>();
-            stack.push(1);
-            stack.push(2);
-            stack.push(3);
-            stack.push(4);
-            stack.push(5);
-            System.out.println("size is " + stack.size());
+//
+//        Node head = new Node(1);
+//        Node second = new Node(2);
+//        Node third = new Node(3);
+//
+//        head.next = second;
+//        second.next = third;
+////          System.out.println("null is" + check(head));
+//
+//        if (check(head) % 2 == 0) {
+//            System.out.println("odd");
+//        } else {
+//            System.out.println("even");
+////         }
+//            Stack<Integer> stack = new Stack<Integer>();
+//            stack.push(1);
+//            stack.push(2);
+//            stack.push(3);
+//            stack.push(4);
+//            stack.push(5);
+//            System.out.println("size is " + stack.size());
 
 
 //        StringDuplicate stringDuplicate = new StringDuplicate();
@@ -122,14 +118,34 @@ public class Main {
 
 //                AltNum altNum =  new AltNum();
 //                altNum.print(new int[]{1,2,3,4,5,6,7});
-
-            Palindrom palindrom = new Palindrom();
-            palindrom.print("abca");
-//        System.out.println(b);
+//
+//            Palindrom palindrom = new Palindrom();
+//            boolean b= palindrom.print("abca");
+//            System.out.println(b);
 
 //        PalindromNum palindromNum=new PalindromNum();
 //         palindromNum.num(121);
 
+        CustomStack customStack = null;
+        try {
+            customStack = new CustomStack(5);
+            customStack.push(1);
+            customStack.push(2);
+            customStack.push(3);
+            customStack.push(4);
+            customStack.push(5);
+            customStack.push(6);
+            System.out.println("pop item is "+customStack.pop());
+            System.out.println("pop item is "+customStack.pop());
+            System.out.println("pop item is "+customStack.pop());
+            System.out.println("pop item is "+customStack.pop());
+            System.out.println("pop item is "+customStack.pop());
+            System.out.println("pop item is "+customStack.pop());
+            System.out.println("pop item is "+customStack.pop());
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
     }
 }
