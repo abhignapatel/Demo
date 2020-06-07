@@ -22,7 +22,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-//        int a[] = new int[]{1,2,3,4,5,5};
+//         int a[] = new int[]{1,2,3,4,5,5};
 //        FindRepeat fr = new FindRepeat();
 //        int b = fr.find(a,5);
 //        System.out.println(b);
@@ -116,7 +116,20 @@ public class Main {
             System.out.println("size is " + stack.size());
 
 
+//        StringDuplicate stringDuplicate = new StringDuplicate();
+//        boolean str= stringDuplicate.test("engineer");
+//        System.out.println(str);
+
+//                AltNum altNum =  new AltNum();
+//                altNum.print(new int[]{1,2,3,4,5,6,7});
+
+            Palindrom palindrom = new Palindrom();
+            palindrom.print("abca");
+//        System.out.println(b);
+
+//        PalindromNum palindromNum=new PalindromNum();
+//         palindromNum.num(121);
+
         }
     }
-
 }

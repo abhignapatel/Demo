@@ -1,5 +1,5 @@
 public class Palindrom {
-    void print(String s){
+void print(String s){
         char[] arr=s.toCharArray();
           int i=0;
           int j=i-1;
