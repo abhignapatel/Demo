@@ -148,7 +148,7 @@ public class Main {
 //        } catch (Exception e) {
 //            e.printStackTrace();
 //        }
-        CustomQueue customQueue = null;
+        CustomQueue customQueue ;
         try {
             customQueue = new CustomQueue(5);
             customQueue.enQeue(1);
@@ -168,10 +168,6 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
-
-
 
     }
 }
