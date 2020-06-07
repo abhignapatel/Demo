@@ -6,10 +6,10 @@ public class CustomQueue {
 
 
 
-    CustomQueue(int capacity) throws IllegalArgumentException {
+    CustomQueue(int capacity) throws Exception {
 
         if (capacity<=0){
-           throw new IllegalArgumentException("capacity should not be zero and less than zero ");
+           throw new Exception("capacity should not be zero and less than zero ");
         }else{
             array = new int[capacity];
             front = rear = 0;

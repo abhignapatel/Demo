@@ -1,3 +1,5 @@
+import java.util.concurrent.Callable;
+
 public class Main {
 //    static boolean test(int[] a, int key) {
 //        for (int i = 0; i < a.length; i++) {
@@ -125,27 +127,51 @@ public class Main {
 
 //        PalindromNum palindromNum=new PalindromNum();
 //         palindromNum.num(121);
-
-        CustomStack customStack = null;
+//
+//        CustomStack customStack = null;
+//        try {
+//            customStack = new CustomStack(5);
+//            customStack.push(1);
+//            customStack.push(2);
+//            customStack.push(3);
+//            customStack.push(4);
+//            customStack.push(5);
+//            customStack.push(6);
+//            System.out.println("pop item is "+customStack.pop());
+//            System.out.println("pop item is "+customStack.pop());
+//            System.out.println("pop item is "+customStack.pop());
+//            System.out.println("pop item is "+customStack.pop());
+//            System.out.println("pop item is "+customStack.pop());
+//            System.out.println("pop item is "+customStack.pop());
+//            System.out.println("pop item is "+customStack.pop());
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+        CustomQueue customQueue = null;
         try {
-            customStack = new CustomStack(5);
-            customStack.push(1);
-            customStack.push(2);
-            customStack.push(3);
-            customStack.push(4);
-            customStack.push(5);
-            customStack.push(6);
-            System.out.println("pop item is "+customStack.pop());
-            System.out.println("pop item is "+customStack.pop());
-            System.out.println("pop item is "+customStack.pop());
-            System.out.println("pop item is "+customStack.pop());
-            System.out.println("pop item is "+customStack.pop());
-            System.out.println("pop item is "+customStack.pop());
-            System.out.println("pop item is "+customStack.pop());
+            customQueue = new CustomQueue(5);
+            customQueue.enQeue(1);
+            customQueue.enQeue(2);
+            customQueue.enQeue(3);
+            customQueue.enQeue(4);
+            customQueue.enQeue(5);
+            customQueue.enQeue(6);
+            System.out.println("deqeue item is "+customQueue.deQueue());
+            System.out.println("deqeue item is "+customQueue.deQueue());
+            System.out.println("deqeue item is "+customQueue.deQueue());
+            System.out.println("deqeue item is "+customQueue.deQueue());
+            System.out.println("deqeue item is "+customQueue.deQueue());
+            System.out.println("deqeue item is "+customQueue.deQueue());
+            System.out.println("deqeue item is "+customQueue.deQueue());
 
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+
+
+
 
     }
 }
