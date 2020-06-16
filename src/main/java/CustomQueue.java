@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class CustomQueue {
 //   private int front, rear;
 //    private  int[] array;
@@ -33,8 +32,6 @@ public class CustomQueue {
         }
        rear.next=temp;
         rear=temp;
-
-
     }
 
     int deQueue() {
@@ -43,8 +40,7 @@ public class CustomQueue {
 //            int data = array[front];
 //            front++;
 //            return data;
-//
-//        }
+//      }
         if (front!=null){
             int data = front.data;
             front = front.next;
@@ -52,9 +48,5 @@ public class CustomQueue {
         }
         System.out.println("queue is empty");
         return 0;
-
     }
-
-
-
 }

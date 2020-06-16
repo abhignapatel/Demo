@@ -1,5 +1,3 @@
-import java.util.concurrent.Callable;
-
 public class Main {
 //    static boolean test(int[] a, int key) {
 //        for (int i = 0; i < a.length; i++) {
@@ -9,7 +7,7 @@ public class Main {
 //        }
 //        return false;
 //    }
-
+//count the node
     static int check(Node head) {
         int count = 0;
         while (head != null) {
@@ -98,7 +96,7 @@ public class Main {
 //
 //        head.next = second;
 //        second.next = third;
-////          System.out.println("null is" + check(head));
+//          System.out.println("null is" + check(head));
 //
 //        if (check(head) % 2 == 0) {
 //            System.out.println("odd");
@@ -148,26 +146,37 @@ public class Main {
 //        } catch (Exception e) {
 //            e.printStackTrace();
 //        }
-        CustomQueue customQueue ;
-        try {
-            customQueue = new CustomQueue(5);
-            customQueue.enQeue(1);
-            customQueue.enQeue(2);
-            customQueue.enQeue(3);
-            customQueue.enQeue(4);
-            customQueue.enQeue(5);
-            customQueue.enQeue(6);
-            System.out.println("deqeue item is "+customQueue.deQueue());
-            System.out.println("deqeue item is "+customQueue.deQueue());
-            System.out.println("deqeue item is "+customQueue.deQueue());
-            System.out.println("deqeue item is "+customQueue.deQueue());
-            System.out.println("deqeue item is "+customQueue.deQueue());
-            System.out.println("deqeue item is "+customQueue.deQueue());
-            System.out.println("deqeue item is "+customQueue.deQueue());
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        CustomQueue customQueue ;
+//        try {
+//            customQueue = new CustomQueue(5);
+//            customQueue.enQeue(1);
+//            customQueue.enQeue(2);
+//            customQueue.enQeue(3);
+//            customQueue.enQeue(4);
+//            customQueue.enQeue(5);
+//            customQueue.enQeue(6);
+//            System.out.println("deqeue item is "+customQueue.deQueue());
+//            System.out.println("deqeue item is "+customQueue.deQueue());
+//            System.out.println("deqeue item is "+customQueue.deQueue());
+//            System.out.println("deqeue item is "+customQueue.deQueue());
+//            System.out.println("deqeue item is "+customQueue.deQueue());
+//            System.out.println("deqeue item is "+customQueue.deQueue());
+//            System.out.println("deqeue item is "+customQueue.deQueue());
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+        LinkedList linkedList = new LinkedList(4);
+        linkedList.insertAtBeginning(3);
+        linkedList.insertAtBeginning(2);
+        linkedList.insertAtEnd(5);
+        linkedList.insertAtEnd(6);
+        linkedList.insertAtBeginning(1);
+//        linkedList.insertAtEnd(0);
+        linkedList.addMiddle(9);
+        linkedList.print();
+        System.out.println("middle element is "+linkedList.getMiddle(6));
+        linkedList.deleteNode();
 
     }
 }
